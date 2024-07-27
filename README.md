@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/github/languages/top/AstraBert/SearchPhi" alt="GitHub top language">
    <img src="https://img.shields.io/github/commit-activity/t/AstraBert/SearchPhi" alt="GitHub commit activity">
    <img src="https://img.shields.io/badge/Status-stable_beta-green" alt="Static Badge">
-   <img src="https://img.shields.io/badge/Release-v0.0_beta-purple" alt="Static Badge">
+   <img src="https://img.shields.io/badge/Release-v0.0_beta.0-purple" alt="Static Badge">
    <img src="https://img.shields.io/docker/image-size/astrabert/searchphi
    " alt="Docker image size">
    <img src="https://img.shields.io/badge/Supported_platforms-Windows/POSIX-brown" alt="Static Badge">
