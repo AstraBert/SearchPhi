@@ -84,6 +84,16 @@ Shortly after you submit the `docker run` command, the container logs will tell 
 
 **CONs**: You cannot customize the application code
 
+### Run in cloud
+
+- **GitHub CodeSpaces**: Click the ![#05ab0b](https://placehold.co/15x15/05ab0b/05ab0b.png) `<> Code` button on the top right, selecting `Codespaces` and then `Create codespace on main`.
+
+- **GitPod workspaces**: Click [here](https://gitpod.io/#https://github.com/AstraBert/SearchPhi) to open the GitPod workspace
+
+**PROs**: No local installation and you can exploit better hardwares
+
+**CONs**: Limited resources
+
 ### Usage note
 
 > ⚠️ _The Streamlit application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
