@@ -86,14 +86,15 @@ Shortly after you submit the `docker run` command, the container logs will tell 
 
 ### Usage note
 
-> ⚠️ _The python application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
+> ⚠️ _The Streamlit application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
+
 > ⚠️ _The Docker container was successfully tested on a Windows 10.0.22631 machine and on a Ubuntu 22.04.3 machine_ 
 
-Although being at a good stage of development, the application is in beta and might still contain bugs and have OS/hardware incompatibilities.  
+Although being at a good stage of development, the application is a `beta` and might still contain bugs and have OS/hardware/python version incompatibilities.
 
 ## Demo
 
-You can try out SearchPhi on [this HuggingFace Space]()https://huggingface.co/spaces/as-cle-bert/SearchPhi). 
+You can try out SearchPhi on [this HuggingFace Space](https://huggingface.co/spaces/as-cle-bert/SearchPhi). 
 
 Here's a video demo of what it can do:
 
