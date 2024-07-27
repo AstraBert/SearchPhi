@@ -1,6 +1,19 @@
-# SearchPhi
+<h1 align="center">SearchPhi</h1>
+<h2 align="center">Open source and AI-powered web search engine🌐</h2>
 
-Open source and AI-powered web search engine: local, private, dockerized and supported by a fluffy llama🦙... What else do we want?😍
+
+<div align="center">
+    <img src="https://img.shields.io/github/languages/top/AstraBert/SearchPhi" alt="GitHub top language">
+   <img src="https://img.shields.io/github/commit-activity/t/AstraBert/SearchPhi" alt="GitHub commit activity">
+   <img src="https://img.shields.io/badge/Status-stable_beta-green" alt="Static Badge">
+   <img src="https://img.shields.io/badge/Release-v0.0_beta-purple" alt="Static Badge">
+   <img src="https://img.shields.io/docker/image-size/astrabert/searchphi
+   " alt="Docker image size">
+   <img src="https://img.shields.io/badge/Supported_platforms-Windows/POSIX-brown" alt="Static Badge">
+   <div>
+        <img src="./imgs/SearchPhi_logo.png" alt="Logo" align="center">
+   </div>
+</div>
 
 ## About SearchPhi
 
@@ -48,6 +61,7 @@ python3 -m streamlit run app.py
 You'll see the application on `http://localhost:8501`.
 
 **PROs**: You can customize the application code (change the GGUF model, change CPU/GPU settings, change generation kwargs, modify the app interface...)
+
 **CONs**: Longer and more complex installation process
 
 ### Docker
@@ -67,7 +81,15 @@ docker run -p 8501:8501 astrabert/searchphi
 Shortly after you submit the `docker run` command, the container logs will tell you that the application is up and running on `http://localhost:8501`.
 
 **PROs**: Shorter and simpler installation process
+
 **CONs**: You cannot customize the application code
+
+### Usage note
+
+> ⚠️ _The python application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
+> ⚠️ _The Docker container was successfully tested on a Windows 10.0.22631 machine and on a Ubuntu 22.04.3 machine_ 
+
+Although being at a good stage of development, the application is in beta and might still contain bugs and have OS/hardware incompatibilities.  
 
 ## Demo
 
@@ -79,7 +101,7 @@ Here's a video demo of what it can do:
 
 ## Contributions
 
-Contributions are more than welcome! See [CONTRIBUTING](./CONTRIBUTING.md) for more information :)
+Contributions are more than welcome! See [contribution guidelines](./CONTRIBUTING) for more information :)
 
 ## Funding
 
