@@ -112,7 +112,7 @@ Here's a video demo of what it can do:
 
 ## Contributions
 
-Contributions are more than welcome! See [contribution guidelines](./CONTRIBUTING) for more information :)
+Contributions are more than welcome! See [contribution guidelines](./CONTRIBUTING.md) for more information :)
 
 ## Funding
 
