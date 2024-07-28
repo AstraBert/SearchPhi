@@ -1,0 +1,8 @@
+FROM astrabert/searchphi:latest
+
+RUN apt update && apt install -y git
+
+EXPOSE 8501
+
+ENTRYPOINT [ "streamlit", "run" ]
+CMD [ "app.py" ]

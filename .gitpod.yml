@@ -1,4 +1,4 @@
-image: astrabert/searchphi:latest
+image: astrabert/searchphi:gitpod
 
 ports:
   - name: streamlit
@@ -7,5 +7,4 @@ ports:
 
 tasks:
   - init: |
-      apt update && apt install git
-  - command: streamlit run app.py
+      streamlit run app.py
