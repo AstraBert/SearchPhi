@@ -7,5 +7,5 @@ ports:
 
 tasks:
   - init: |
-      docker run -d -p 8501:8501 astrabert/searchphi:latest
-  - command: sleep 5000
+      apt update && apt install git
+  - command: streamlit run app.py
