@@ -86,8 +86,6 @@ Shortly after you submit the `docker run` command, the container logs will tell 
 
 ### Run in cloud
 
-- **GitHub CodeSpaces**: Click the ![#05ab0b](https://placehold.co/15x15/05ab0b/05ab0b.png) `<> Code` button on the top right, selecting `Codespaces` and then `Create codespace on main`.
-
 - **GitPod workspaces**: Click [here](https://gitpod.io/#https://github.com/AstraBert/SearchPhi) to open the GitPod workspace
 
 **PROs**: No local installation and you can exploit better hardwares
