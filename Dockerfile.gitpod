@@ -1,6 +1,6 @@
-FROM astrabert/searchphi:latest
+FROM astrabert/searchphi:gitpod
 
-RUN apt update && apt install -y git
+RUN apt update && apt install -y docker.io git
 
 EXPOSE 8501
 
