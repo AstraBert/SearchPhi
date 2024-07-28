@@ -20,5 +20,6 @@
 				"ms-python.python"
 			]
 		}
-	}
+	},
+	"postStartCommand": "python3 -m streamlit run app.py"
 }
