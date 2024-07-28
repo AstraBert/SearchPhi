@@ -69,13 +69,13 @@ You'll see the application on `http://localhost:8501`.
 1. Pull the image
 
 ```bash
-docker pull astrabert/searchphi
+docker pull astrabert/searchphi:latest
 ```
 
 2. Run the container:
 
 ```bash
-docker run -p 8501:8501 astrabert/searchphi
+docker run -p 8501:8501 astrabert/searchphi:latest
 ```
 
 Shortly after you submit the `docker run` command, the container logs will tell you that the application is up and running on `http://localhost:8501`.
