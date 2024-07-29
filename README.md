@@ -44,10 +44,15 @@ python3 -m venv /path/to/SearchPhi
 source /path/to/SearchPhi/bin/activate
 python3 -m pip install -r requirements.txt
 ```
-  - Windows Powershell:
-```Powershell
+  - Windows:
+```bash
 python3 -m venv c:\path\to\SearchPhi
-c:\path\to\SearchPhi\Scripts\Activate.ps1
+c:\path\to\SearchPhi\Scripts\activate  # For Command Prompt
+# or
+c:\path\to\SearchPhi\Scripts\Activate.ps1  # For PowerShell
+# or
+source c:\path\to\SearchPhi\Scripts\activate  # For Git
+
 python3 -m pip install -r requirements.txt
 ```
 
