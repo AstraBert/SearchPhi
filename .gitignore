@@ -1,2 +1,5 @@
 model/
 __pycache__/
+.env
+virtualenv/
+qdrant_storage/

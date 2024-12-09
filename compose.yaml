@@ -1,0 +1,40 @@
+networks:
+  mynet:
+    driver: bridge
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    networks:
+      - mynet
+    environment:
+      POSTGRES_DB: $PG_DB
+      POSTGRES_USER: $PG_USER
+      POSTGRES_PASSWORD: $PG_PASSWORD
+    volumes:
+      - pgdata:/var/lib/postgresql/data 
+  
+  semantic_memory:
+    image: qdrant/qdrant
+    restart: always
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    networks:
+      - mynet
+    volumes:
+      - "./qdrant_storage:/qdrant/storage"
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - mynet
+ 
+volumes:
+  pgdata:

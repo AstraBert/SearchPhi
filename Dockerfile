@@ -10,7 +10,6 @@ RUN python3 -m pip install --no-cache-dir -r requirements.txt
 RUN python3 -m nltk.downloader "punkt"
 RUN python3 -m nltk.downloader "stopwords"
 
-EXPOSE 8501
+EXPOSE 7860
 
-ENTRYPOINT [ "streamlit", "run" ]
-CMD [ "app.py" ]
+CMD ["python3", "/app/app.py"]

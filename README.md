@@ -1,7 +1,6 @@
 <h1 align="center">SearchPhi</h1>
 <h2 align="center">Open source and AI-powered web search engine🌐</h2>
 
-
 <div align="center">
     <img src="https://img.shields.io/github/languages/top/AstraBert/SearchPhi" alt="GitHub top language">
    <img src="https://img.shields.io/github/commit-activity/t/AstraBert/SearchPhi" alt="GitHub commit activity">
@@ -14,6 +13,8 @@
         <img src="./imgs/SearchPhi_logo.png" alt="Logo" align="center">
    </div>
 </div>
+
+> **_DOCS TO BE UPDATED SOON!_**
 
 ## About SearchPhi
 
