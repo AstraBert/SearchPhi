@@ -1,0 +1,17 @@
+googlesearch-python
+nltk
+rake_nltk
+boilerpy3
+qdrant_client
+trl
+torch
+accelerate
+transformers
+gradio
+einops
+timm
+pillow
+sqlalchemy
+sentence_transformers
+bitsandbytes
+python_dotenv

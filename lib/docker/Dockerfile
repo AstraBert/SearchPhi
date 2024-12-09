@@ -9,6 +9,7 @@ RUN python3 -m pip cache purge
 RUN python3 -m pip install --no-cache-dir -r requirements.txt 
 RUN python3 -m nltk.downloader "punkt"
 RUN python3 -m nltk.downloader "stopwords"
+RUN python3 -m nltk.downloader "punkt_tab"
 
 EXPOSE 7860
 
