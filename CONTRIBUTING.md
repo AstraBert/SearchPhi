@@ -1,4 +1,4 @@
-# Contributing to SearchPhi
+# Contributing to PrAIvateSearch
 
 Do you want to contribute to this project? Make sure to read this guidelines first :)
 
@@ -32,15 +32,15 @@ Do you want to contribute to this project? Make sure to read this guidelines fir
 3. Submit pull request (make sure to provide a thorough description of the changes)
 
 
-## Showcase your SearchPhi
+## Showcase your PrAIvateSearch
 
 **When to do it**:
 
-- You modified the base application with new features but you don't want/can't merge them with the original SearchPhi
+- You modified the base application with new features but you don't want/can't merge them with the original PrAIvateSearch
 
 **How to do it**:
 
-- Go to [_GitHub Discussions > Show and tell_](https://github.com/AstraBert/SearchPhi/discussions/categories/show-and-tell) page
-- Open a new discussion there, describing your SearchPhi application
+- Go to [_GitHub Discussions > Show and tell_](https://github.com/AstraBert/PrAIvateSearch/discussions/categories/show-and-tell) page
+- Open a new discussion there, describing your PrAIvateSearch application
 
 ### Thanks for contributing!
