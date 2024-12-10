@@ -10,6 +10,7 @@ from memory import ConversationHistory, PGClient
 import os
 import random as r
 from trl import setup_chat_format
+from websearching import date_for_debug
 
 load_dotenv()
 
@@ -44,9 +45,12 @@ def pipe(prompt: str, temperature: float, top_p: float, max_new_tokens: int, rep
     results = tokenizer.decode(outputs[0])
     return results
 
-def text_inference(message):
+def text_inference(message, debug):
     convo_hist.add_message(role="user", content=message)
     prompt = convo_hist.get_conversation_history()
+    if debug:
+        print(f"[{date_for_debug()}] CONVERSATIONAL HISTORY")
+        print(prompt)
     res = pipe(
         prompt,
         temperature=0.1,

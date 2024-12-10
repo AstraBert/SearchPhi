@@ -11,9 +11,9 @@ services:
     networks:
       - mynet
     environment:
-      POSTGRES_DB: pgql_usr
-      POSTGRES_USER: pgql_psw
-      POSTGRES_PASSWORD: pgql_psw
+      POSTGRES_DB: $PG_DB
+      POSTGRES_USER: $PG_USER
+      POSTGRES_PASSWORD: $PG_PASSWORD
     volumes:
       - pgdata:/var/lib/postgresql/data 
   
@@ -27,15 +27,7 @@ services:
       - mynet
     volumes:
       - "./qdrant_storage:/qdrant/storage"
-
-  praivatesearch:
-    image: astrabert/praivatesearch:latest
-    restart: always
-    ports:
-      - "7860:7860"
-    networks:
-      - mynet
-
+    
   adminer:
     image: adminer
     restart: always

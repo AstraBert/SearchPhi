@@ -65,6 +65,7 @@ class ConversationHistory:
         conversation_id = conv_id.fetchone()[0]
         self.conversation_id = conversation_id
     def add_message(self, role, content):
+        content = content.replace("'","''")
         self.client.execute_query(f"INSERT INTO messages (conversation_id, role, content) VALUES ({self.conversation_id}, '{role}', '{content}')")
     def get_conversation_history(self):
         res = self.client.execute_query(f"SELECT role, content FROM messages WHERE conversation_id = {self.conversation_id} ORDER BY timestamp ASC")

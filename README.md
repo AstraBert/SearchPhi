@@ -1,42 +1,51 @@
-<h1 align="center">SearchPhi</h1>
-<h2 align="center">Open source and AI-powered web search engine🌐</h2>
+<h1 align="center">PrAIvateSearch</h1>
+<h2 align="center">Own your AI, search the web with it🌐😎</h2>
 
 <div align="center">
-    <img src="https://img.shields.io/github/languages/top/AstraBert/SearchPhi" alt="GitHub top language">
-   <img src="https://img.shields.io/github/commit-activity/t/AstraBert/SearchPhi" alt="GitHub commit activity">
-   <img src="https://img.shields.io/badge/Status-stable_beta-green" alt="Static Badge">
-   <img src="https://img.shields.io/badge/Release-v0.0_beta.0-purple" alt="Static Badge">
-   <img src="https://img.shields.io/docker/image-size/astrabert/searchphi
-   " alt="Docker image size">
-   <img src="https://img.shields.io/badge/Supported_platforms-Windows/POSIX-brown" alt="Static Badge">
    <div>
-        <img src="./imgs/SearchPhi_logo.png" alt="Logo" align="center">
+        <img src="./imgs/PrAIvateSearch_logo.png" alt="Logo" align="center">
    </div>
 </div>
 
-> **_DOCS TO BE UPDATED SOON!_**
 
-## About SearchPhi
+## About PrAIvateSearch
 
-SearchPhi is a Streamlit application that aims to implement similar features to SearchGPT, but in an open-source, local and private way. 
+PrAIvateSearch is a Gradio application that aims to implement similar features to SearchGPT, but in an open-source, local and private way. 
+
+## Flowchart
+
+<div align="center">
+    <img src="./imgs/PrAIvateSearch_Flowchart.png" alt="Logo" align="center">
+    <p><i>Flowchart for PrAIvateSearch</i></p>
+</div>
+
+The process of creating and the functioning of PrAIvateSearch is explained in this [blog post on HuggingFace](https://huggingface.co/blog/as-cle-bert/build-an-ai-powered-search-engine-from-scratch).
 
 ## Installation and usage
 
-### Source code
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/AstraBert/SearchPhi.git
-cd SearchPhi
+git clone https://github.com/AstraBert/PrAIvateSearch.git
+cd PrAIvateSearch
 ```
 
-2. Create a `model` folder, download [this GGUF file](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/blob/main/Phi-3-mini-4k-instruct-q4.gguf) and move the GGUF file in the `model` folder:
+2. Move `.env.example` to `.env`...
 
 ```bash
-mkdir model
-mv /path/to/Downloads/Phi-3-mini-4k-instruct-q4.gguf model/
+mv .env.example .env
 ```
+
+...and specify PostgreSQL related variables:
+
+```bash
+# .env file
+PG_DB="postgres"
+PG_USER="pgql_usr"
+PG_PASSWORD="pgql_psw"
+```
+
 
 3. Install necessary dependencies:
   - Linux:
@@ -57,58 +66,31 @@ source c:\path\to\SearchPhi\Scripts\activate  # For Git
 python3 -m pip install -r requirements.txt
 ```
 
-
-4. Run the application:
+4. Start third-party services:
 
 ```bash
-python3 -m streamlit run app.py
+docker compose up -d
 ```
 
-You'll see the application on `http://localhost:8501`.
+5. Run the application:
 
-**PROs**: You can customize the application code (change the GGUF model, change CPU/GPU settings, change generation kwargs, modify the app interface...)
+```bash
+python3 scripts/app.py
+```
+
+Once the models will be downloaded and loaded on your hardware, you'll see the application on `http://localhost:7860`.
+
+**PROs**: You can customize the application code (change the model, change CPU/GPU settings, change generation kwargs, modify the app interface...)
 
 **CONs**: Longer and more complex installation process
 
-### Docker
-
-1. Pull the image
-
-```bash
-docker pull astrabert/searchphi:latest
-```
-
-2. Run the container:
-
-```bash
-docker run -p 8501:8501 astrabert/searchphi:latest
-```
-
-Shortly after you submit the `docker run` command, the container logs will tell you that the application is up and running on `http://localhost:8501`.
-
-**PROs**: Shorter and simpler installation process
-
-**CONs**: You cannot customize the application code
-
-### Run in cloud
-
-- **GitPod workspaces**: Click [here](https://gitpod.io/#https://github.com/AstraBert/SearchPhi) to open the GitPod workspace
-
-**PROs**: No local installation and you can exploit better hardwares
-
-**CONs**: Limited resources
-
 ### Usage note
 
-> ⚠️ _The Streamlit application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
-
-> ⚠️ _The Docker container was successfully tested on a Windows 10.0.22631 machine and on a Ubuntu 22.04.3 machine_ 
+> ⚠️ _The Gradio application was successfully developed and tested on a Windows 10.0.22631 machine, with 32GB RAM, 16 core CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.9_
 
 Although being at a good stage of development, the application is a `beta` and might still contain bugs and have OS/hardware/python version incompatibilities.
 
 ## Demo
-
-You can try out SearchPhi on [this HuggingFace Space](https://huggingface.co/spaces/as-cle-bert/SearchPhi). 
 
 Here's a video demo of what it can do:
 

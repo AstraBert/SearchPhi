@@ -105,12 +105,12 @@ def web_search(query, num_results=5, enable_rag=False, debug = True):
     jsonstr = json.dumps(jsonlike)
     if truth:
         if context:
-            return "KEYWORDS:\n\n"+jsonstr+"\n\nCONTEXT:\n\n"+context, f"[{date_for_debug()}] SUCCESS! Semantic memory successfully updated!"
+            return "QUERY:\n\n"+query+"\n\nKEYWORDS:\n\n"+jsonstr+"\n\nCONTEXT:\n\n"+context, f"[{date_for_debug()}] SUCCESS! Semantic memory successfully updated!"
         else:
-            return "KEYWORDS:\n\n"+jsonstr, f"[{date_for_debug()}] SUCCESS! Semantic memory successfully updated!"
+            return "QUERY:\n\n"+query+"\n\nKEYWORDS:\n\n"+jsonstr, f"[{date_for_debug()}] SUCCESS! Semantic memory successfully updated!"
     if context:
-        return "KEYWORDS:\n\n"+jsonstr+"\n\nCONTEXT:\n\n"+context, f"[{date_for_debug()}]  WARNING! Something went wrong while updating semantic memory"
-    return jsonstr, f"[{date_for_debug()}]  WARNING! Something went wrong while updating semantic memory"
+        return "QUERY:\n\n"+query+"\n\nKEYWORDS:\n\n"+jsonstr+"\n\nCONTEXT:\n\n"+context, f"[{date_for_debug()}]  WARNING! Something went wrong while updating semantic memory"
+    return "QUERY:\n\n"+query+"\n\nKEYWORDS:\n\n"+jsonstr, f"[{date_for_debug()}]  WARNING! Something went wrong while updating semantic memory"
 
 
 

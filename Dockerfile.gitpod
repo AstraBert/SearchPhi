@@ -1,8 +1,0 @@
-FROM astrabert/searchphi:gitpod
-
-RUN apt update && apt install -y docker.io git
-
-EXPOSE 8501
-
-ENTRYPOINT [ "streamlit", "run" ]
-CMD [ "app.py" ]

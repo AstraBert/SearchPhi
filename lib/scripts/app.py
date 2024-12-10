@@ -14,7 +14,7 @@ def reply(text_input, image_input=None, max_results=5, enable_rag=False, debug =
         prompt, qdrant_success = web_search(text_input, max_results, enable_rag, debug)
         if debug:
             print(qdrant_success)
-        results = text_inference(prompt)
+        results = text_inference(prompt, debug)
         results = results.replace("<|im_end|>","")
         if debug:
             print(f"[{date_for_debug()}] Finished query processing!")
@@ -27,7 +27,7 @@ def reply(text_input, image_input=None, max_results=5, enable_rag=False, debug =
             prompt, qdrant_success = web_search(full_query, max_results, enable_rag)
             if debug:
                 print(qdrant_success)
-            results = text_inference(prompt)
+            results = text_inference(prompt, debug)
             results = results.replace("<|im_end|>","")
             if debug:
                 print(f"[{date_for_debug()}] Finished query processing!")
@@ -38,7 +38,7 @@ def reply(text_input, image_input=None, max_results=5, enable_rag=False, debug =
             prompt, qdrant_success = web_search(caption, max_results, enable_rag)
             if debug:
                 print(qdrant_success)
-            results = text_inference(prompt)
+            results = text_inference(prompt, debug)
             results = results.replace("<|im_end|>","")
             if debug:
                 print(f"[{date_for_debug()}] Finished query processing!")

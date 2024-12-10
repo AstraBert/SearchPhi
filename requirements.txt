@@ -1,7 +1,7 @@
-googlesearch-python==1.2.4
-nltk==3.8.1
-rake_nltk==1.0.6
-boilerpy3==1.0.7
+googlesearch-python
+nltk
+rake_nltk
+boilerpy3
 qdrant_client
 trl
 torch
