@@ -23,7 +23,7 @@ The process of creating and the functioning of PrAIvateSearch will be explained 
 
 ## Installation and usage
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > _For this section, you should have [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) package manager, [`docker`](https://www.docker.com/) and [`docker compose`](https://docs.docker.com/compose/)._
 
 1. Clone the repository:
@@ -70,7 +70,7 @@ You can access the application from `http://localhost:3000` and chat with it!
 
 ### Usage note
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > _The NextJS application was successfully developed and tested on a Ubuntu 22.04.3 machine, with 32GB RAM, 22 cores CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.11 (packaged by conda 24.11.0)_
 
 Although being at a good stage of development, the application is a `beta` and might still contain bugs and have OS/hardware/python version incompatibilities.
