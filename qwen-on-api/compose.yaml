@@ -1,5 +1,3 @@
-name: praivatesearch
-
 networks:
   mynet:
     driver: bridge
@@ -40,7 +38,7 @@ services:
   
   ui:
     build:
-      context: ./chatbot-ui/
+      context: ../chatbot-ui/
       dockerfile: Dockerfile.ui 
     ports:
       - "3000:3000"

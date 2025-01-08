@@ -9,3 +9,6 @@ qdrant_storage/
 lib/docker/florence-2/
 lib/docker/qwen/
 lib/docker/labse/
+qwen-on-api/__pycache__/
+chatbot-ui/.next/
+chatbot-ui/node_modules/
