@@ -72,6 +72,8 @@ docker compose up -d
 5. Run `Qwen-2.5-1.5B-Instruct` on API with FastAPI/Uvicorn:
 
 ```bash
+conda activate praivatesearch
+cd qwen-on-api/
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
