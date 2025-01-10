@@ -1,4 +1,4 @@
-site_name: Academic Notes
+site_name: PrAIvateSearch
 theme:
   name: material
   features:
@@ -30,3 +30,4 @@ nav:
 - Explanation: explanation.md 
 - About: about.md
 - Contributing: contributing.md
+- Troubleshooting: troubleshooting.md

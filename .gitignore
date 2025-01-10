@@ -12,3 +12,4 @@ lib/docker/labse/
 qwen-on-api/__pycache__/
 chatbot-ui/.next/
 chatbot-ui/node_modules/
+site/

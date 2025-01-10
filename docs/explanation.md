@@ -152,6 +152,9 @@ We can head over to the *conda* environment we set up in the first steps, and la
 # activate the environment
 conda activate praivatesearch
 
+# head over to the folder where the app is stored
+cd qwen-on-api/
+
 # launch the application
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
