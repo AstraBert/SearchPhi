@@ -19,7 +19,7 @@ PrAIvateSearch is a NextJS web application that aims to implement similar featur
     <p><i>Flowchart for PrAIvateSearch</i></p>
 </div>
 
-The process of creating and the functioning of PrAIvateSearch will be explained in a future [blog post on HuggingFace](#).
+The process of creating and the functioning of PrAIvateSearch is explained in [this blog post on HuggingFace](https://huggingface.co/blog/as-cle-bert/search-the-web-with-ai).
 
 ## Installation and usage
 
@@ -53,7 +53,16 @@ pgql_psw="admin"
 ```bash
 conda env create -f conda_environment.yaml
 ```
- 
+
+4. Set up Crawl4AI inside the `conda` environment:
+
+```bash
+conda activate praivatesearch
+crawl4ai-setup
+crawl4ai-doctor
+conda deactivate
+```
+
 4. Start third-party services:
 
 ```bash

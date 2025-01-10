@@ -416,4 +416,3 @@ dependencies:
       - trl==0.13.0
       - types-requests==2.32.0.20241016
       - zipp==3.21.0
-prefix: /home/clenightdev/miniforge3/envs/meine-liebe
