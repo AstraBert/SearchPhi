@@ -47,14 +47,14 @@ class ConversationHistory:
     def __init__(self, client: PGClient, user_id: int):
         self.client = client
         self.user_id = user_id 
-        self.client.execute_query("""DROP TABLE IF EXISTS conversations;""")
         self.client.execute_query("""DROP TABLE IF EXISTS messages;""")
-        self.client.execute_query("""CREATE TABLE conversations (
+        self.client.execute_query("""DROP TABLE IF EXISTS conversations;""")
+        self.client.execute_query("""CREATE TABLE IF NOT EXISTS conversations (
             id SERIAL PRIMARY KEY,
             user_id INTEGER NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );""")
-        self.client.execute_query("""CREATE TABLE messages (
+        self.client.execute_query("""CREATE TABLE IF NOT EXISTS messages (
             id SERIAL PRIMARY KEY,
             conversation_id INTEGER REFERENCES conversations(id),
             role VARCHAR(10) NOT NULL,

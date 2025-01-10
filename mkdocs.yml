@@ -1,0 +1,32 @@
+site_name: Academic Notes
+theme:
+  name: material
+  features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - search.highlight
+  - search.share
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+plugins:
+- search
+- awesome-pages
+markdown_extensions:
+- pymdownx.highlight
+- pymdownx.superfences
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.tasklist
+- admonition
+- toc
+- attr_list
+nav:
+- Home: index.md
+- Explanation: explanation.md 
+- About: about.md
+- Contributing: contributing.md

@@ -1,0 +1,12 @@
+FROM node:18-alpine
+
+WORKDIR /chatbot-ui/
+COPY ./public/ /chatbot-ui/public/
+COPY ./src/ /chatbot-ui/src/
+COPY ./package.json /chatbot-ui/
+RUN npm install
+
+EXPOSE 3000
+
+
+ENTRYPOINT ["npm", "run", "dev"]
