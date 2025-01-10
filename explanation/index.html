@@ -243,6 +243,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../troubleshooting/" class="md-tabs__link">
+        
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -514,6 +531,26 @@
   
   <span class="md-ellipsis">
     Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
   </span>
   
 
@@ -801,6 +838,9 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 <p>We can head over to the <em>conda</em> environment we set up in the first steps, and launch the API:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># activate the environment</span>
 conda<span class="w"> </span>activate<span class="w"> </span>praivatesearch
+
+<span class="c1"># head over to the folder where the app is stored</span>
+<span class="nb">cd</span><span class="w"> </span>qwen-on-api/
 
 <span class="c1"># launch the application</span>
 uvicorn<span class="w"> </span>main:app<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>

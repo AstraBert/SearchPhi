@@ -241,6 +241,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="troubleshooting/" class="md-tabs__link">
+        
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -459,6 +476,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -625,11 +662,18 @@ conda<span class="w"> </span>deactivate
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
 <ol>
-<li>Run <code>Qwen-2.5-1.5B-Instruct</code> on API with FastAPI/Uvicorn:</li>
+<li>
+<p>Run <code>Qwen-2.5-1.5B-Instruct</code> on API with FastAPI/Uvicorn:</p>
+</li>
+<li>
+<p>Run <code>Qwen-2.5-1.5B-Instruct</code> on API with FastAPI/Uvicorn:</p>
+</li>
 </ol>
-<div class="highlight"><pre><span></span><code>uvicorn<span class="w"> </span>main:app<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
+<p><div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>praivatesearch
+<span class="nb">cd</span><span class="w"> </span>qwen-on-api/
+uvicorn<span class="w"> </span>main:app<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
 </code></pre></div>
-<p>You can access the application from <code>http://localhost:3000</code> and chat with it!</p>
+You can access the application from <code>http://localhost:3000</code> and chat with it!</p>
 <h3 id="usage-note">Usage note</h3>
 <blockquote>
 <p><em>The NextJS application was successfully developed and tested on a Ubuntu 22.04.3 machine, with 32GB RAM, 22 cores CPU and Nvidia GEFORCE RTX4050 GPU (6GB, cuda version 12.3), python version 3.11.11 (packaged by conda 24.11.0)</em></p>
